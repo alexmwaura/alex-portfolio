@@ -5,13 +5,12 @@ var Nav = (function() {
       section = $('.section'),
       link    = nav.find('.nav__link'),
       navH    = nav.innerHeight(),
-      isOpen  = true,
       hasT    = false;
     
-    var toggleNav = function() {
-      nav.toggleClass('nav--active');
-      shiftPage();
-    };
+    // var toggleNav = function() {
+    //   nav.toggleClass('nav--active');
+    //   shiftPage();
+    // };
     
     
     var switchPage = function(e) {
@@ -19,7 +18,6 @@ var Nav = (function() {
       var i = self.parents('.nav__item').index();
       var s = section.eq(i);
       var a = $('section.section--active');
-      var t = $(e.target);
       
       if (!hasT) {
         if (i == a.index()) {
