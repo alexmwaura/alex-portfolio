@@ -3,7 +3,7 @@ import bodyParser from 'body-parser';
 import morgan from 'morgan';
 
 const app = express();
-app.use(morgan('dev'));
+// app.use(morgan('dev'));
 app.use(bodyParser.json())
 app.use(express.static('frontend'))
 
